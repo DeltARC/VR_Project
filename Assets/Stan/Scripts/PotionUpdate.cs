@@ -22,7 +22,7 @@ public class PotionUpdate : MonoBehaviour
         ingredientsAdded.Add(ingredient.ingredientType);
 
         if (potionVisuals != null)
-            potionVisuals.UpdatePotionVisuals();
+            potionVisuals.UpdatePotionVisuals(ingredient.GetIngredientMaterial());
 
         Destroy(ingredient.gameObject);
 

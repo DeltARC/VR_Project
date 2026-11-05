@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4914050440456047472}
   - component: {fileID: 1850646129261029972}
   - component: {fileID: 695974180646241844}
+  - component: {fileID: 8134161360756677896}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -129,7 +130,21 @@ MonoBehaviour:
   water: {fileID: 3739495207514931232}
   waterRenderer: {fileID: 4914050440456047472}
   heightIncrease: 0.05
-  potionColor: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &8134161360756677896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3700305019990711455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644a88a92e48f741aae974ec34652f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PotionUpdate
+  potionVisuals: {fileID: 695974180646241844}
+  recipeIngredients: 000000000000000001000000030000000300000003000000030000000200000002000000040000000500000005000000
+  ingredientsAdded: 
 --- !u!1 &4853600555739758313
 GameObject:
   m_ObjectHideFlags: 0

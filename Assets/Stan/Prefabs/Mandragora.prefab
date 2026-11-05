@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotionIngredient
   ingredientType: 4
+  ingredientMaterial: {fileID: 2100000, guid: 368a446a0ff7bf94db25776538ae690f, type: 2}
 --- !u!54 &2579412740031967086
 Rigidbody:
   m_ObjectHideFlags: 0
