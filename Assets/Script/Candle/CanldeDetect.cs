@@ -3,8 +3,9 @@ using UnityEngine;
 public class CanldeDetect : MonoBehaviour
 {
     public GameObject Flame;
+    public GameObject Summoning;
 
-    bool isflame = false;
+    public bool isflame = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnTriggerEnter(Collider other)
@@ -19,6 +20,8 @@ public class CanldeDetect : MonoBehaviour
                 isflame = true;
             }
         }
+
+        Summoning.GetComponent<Summon>().CheckSumonning();
 
     }
 }
