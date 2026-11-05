@@ -7,12 +7,11 @@ public class PotionVisuals : MonoBehaviour
     [SerializeField] private Renderer waterRenderer;
 
     [Header("Feedback")]
-    [SerializeField] private float heightIncrease = 0.03f;
-    [SerializeField] private Color potionColor = Color.green;
+    [SerializeField] private float heightIncrease = 0.02f;
 
-    public void UpdatePotionVisuals()
+    public void UpdatePotionVisuals(Material ingredientMaterial)
     {
         water.localPosition += Vector3.up * heightIncrease;
-        waterRenderer.material.color = potionColor;
+        waterRenderer.material = ingredientMaterial;
     }
 }
