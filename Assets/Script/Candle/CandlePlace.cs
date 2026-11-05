@@ -5,8 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class CandlePlace : MonoBehaviour
 {
     public GameObject CandlePlacement;
+    public GameObject Summoning;
 
-    
+    public bool isplace = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnTriggerEnter(Collider other)
     {
@@ -20,7 +21,10 @@ public class CandlePlace : MonoBehaviour
             other.transform.position = CandlePlacement.transform.position;
             other.transform.rotation = CandlePlacement.transform.rotation;
             Debug.Log("ok");
+            isplace =true;
         }
+
+        Summoning.GetComponent<Summon>().CheckSumonning();
     }
 
 }
