@@ -16,6 +16,8 @@ public class PotionUpdate : MonoBehaviour
     [Header("Ingredients Added")]
     [SerializeField] private List<IngredientType> ingredientsAdded = new List<IngredientType>();
 
+    public bool PotionSuccess = false;
+
     private void OnTriggerEnter(Collider other)
     {
         PotionIngredient ingredient = other.GetComponentInParent<PotionIngredient>();
@@ -54,6 +56,7 @@ public class PotionUpdate : MonoBehaviour
         {
             Debug.Log("Recette réussie !");
             OnRecipeCompleted?.Invoke(recipeID);
+            PotionSuccess = true;
         }
         else
         {

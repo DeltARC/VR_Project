@@ -6,6 +6,7 @@ public class Summon : MonoBehaviour
 
     [SerializeField] public GameObject[] CandlePlacement;
     [SerializeField] public GameObject[] ZoneFlame;
+    [SerializeField] public GameObject Chaudron;
 
     public GameObject Summoning;
 
@@ -52,7 +53,7 @@ public class Summon : MonoBehaviour
 
         if(Verif == true)
         {
-            if(!AlreadySummon)
+            if(!AlreadySummon && Chaudron.GetComponent<PotionUpdate>().PotionSuccess)
             {
                 Instantiate(Summoning, gameObject.transform);
                 Debug.Log("Summoning");
