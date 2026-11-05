@@ -4,15 +4,28 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     // Script lier à == UI == dans la scene MainMenu
+    [SerializeField] private AudioClip buttonPressedSound;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void PlayButton()
     {
+        //play sound
+        //audioSource.clip = buttonPressedSound;
+        //audioSource.Play();
+
         SceneManager.LoadScene("BasicScene");
     }
 
     public void OptionButton()
     {
-        // Rend le menu invislbe et passe les option visible.
-        //OptionPanel.SetActive(true);
+        //play sound
+        audioSource.clip = buttonPressedSound;
+        audioSource.Play();
     }
 
 }
