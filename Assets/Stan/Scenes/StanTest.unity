@@ -837,30 +837,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
---- !u!1 &1750942142 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2117812533529293291, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
-  m_PrefabInstance: {fileID: 2751559810338641180}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1750942145 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1492459236039041607, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
-  m_PrefabInstance: {fileID: 2751559810338641180}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1750942147
+--- !u!114 &1750942147 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7464278916197556434, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
+  m_PrefabInstance: {fileID: 2751559810338641180}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750942142}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d70c06a3e05c7d047ab6ff664f3cdfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipePageVisual
-  recipeID: potion_01
-  pageRenderer: {fileID: 1750942145}
 --- !u!1 &1767455212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1020,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeBoardManager
   potionUpdate: {fileID: 552848003}
-  recipePages: []
+  recipePages:
+  - {fileID: 1750942147}
 --- !u!1001 &2067382865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1260,10 +1248,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2117812533529293291, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1750942147}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
