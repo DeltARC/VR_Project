@@ -975,53 +975,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &1941793286
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1941793288}
-  - component: {fileID: 1941793289}
-  m_Layer: 0
-  m_Name: RecipeBoardManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1941793288
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941793286}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1941793289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941793286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff65a6cdc5b2ff4f9e59d0f297feb3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RecipeBoardManager
-  potionUpdate: {fileID: 552848003}
-  recipePages:
-  - {fileID: 1750942147}
 --- !u!1001 &2067382865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1193,6 +1146,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7177e89272cd9e64db4194c7907cad14, type: 3}
+--- !u!1001 &1234435912913103857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: potionUpdate
+      value: 
+      objectReference: {fileID: 552848003}
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: 'recipePages.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1750942147}
+    - target: {fileID: 6011861434080283629, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_Name
+      value: RecipeBoardManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
 --- !u!1001 &2751559810338641180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1270,4 +1288,4 @@ SceneRoots:
   - {fileID: 1330500337}
   - {fileID: 965014113}
   - {fileID: 2751559810338641180}
-  - {fileID: 1941793288}
+  - {fileID: 1234435912913103857}
