@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 695974180646241844}
   - component: {fileID: 8134161360756677896}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7644a88a92e48f741aae974ec34652f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotionUpdate
+  recipeID: potion_01
   potionVisuals: {fileID: 695974180646241844}
   recipeIngredients: 000000000000000001000000030000000300000003000000030000000200000002000000040000000500000005000000
   ingredientsAdded: 

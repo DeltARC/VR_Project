@@ -1,8 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PotionUpdate : MonoBehaviour
 {
+    public event Action<string> OnRecipeCompleted;
+    [SerializeField] private string recipeID;
+
     [Header("Potion")]
     [SerializeField] private PotionVisuals potionVisuals;
 
@@ -49,6 +53,7 @@ public class PotionUpdate : MonoBehaviour
         if (ingredientsAdded.Count == recipeIngredients.Count)
         {
             Debug.Log("Recette réussie !");
+            OnRecipeCompleted?.Invoke(recipeID);
         }
         else
         {
