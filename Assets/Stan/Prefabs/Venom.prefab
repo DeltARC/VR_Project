@@ -35,7 +35,8 @@ Transform:
   m_LocalPosition: {x: 1.20372, y: 0.1, z: -0.44161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7094810828020778548}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5509251963175227500
@@ -302,3 +303,77 @@ MonoBehaviour:
   portalPrefab: {fileID: 5265338616175033476, guid: 676495578677d8242a14ef1acd3ee60f, type: 3}
   portalHeight: 3
   portalDuration: 2
+--- !u!1001 &6772219469388765403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 701447194542763050}
+    m_Modifications:
+    - target: {fileID: 3198764233011339698, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_Name
+      value: PotionSplash
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292572454765437206, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292572454765437206, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.12941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292572454765437206, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.28235295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+--- !u!4 &7094810828020778548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+  m_PrefabInstance: {fileID: 6772219469388765403}
+  m_PrefabAsset: {fileID: 0}
