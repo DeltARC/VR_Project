@@ -7932,6 +7932,10 @@ PrefabInstance:
       value: PotionCauldron
       objectReference: {fileID: 0}
     - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+      propertyPath: Recipe
+      value: 
+      objectReference: {fileID: 1912151926}
+    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
       propertyPath: Summon
       value: 
       objectReference: {fileID: 295228826}
@@ -15368,6 +15372,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa19b60dc6cb4d41b7320a40351aeeb, type: 3}
+--- !u!1001 &1912151925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.7688828
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.367
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.394433
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581918260949410433, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888152261003218790, guid: a364591494635f74c8283257b3a56063, type: 3}
+      propertyPath: m_Name
+      value: Recipe
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a364591494635f74c8283257b3a56063, type: 3}
+--- !u!1 &1912151926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4888152261003218790, guid: a364591494635f74c8283257b3a56063, type: 3}
+  m_PrefabInstance: {fileID: 1912151925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1925111467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17407,3 +17473,4 @@ SceneRoots:
   - {fileID: 979718283}
   - {fileID: 474877346}
   - {fileID: 859372231}
+  - {fileID: 1912151925}

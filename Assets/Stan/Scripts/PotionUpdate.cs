@@ -12,6 +12,7 @@ public class PotionUpdate : MonoBehaviour
 
     [Header("Recipe")]
     [SerializeField] private List<IngredientType> recipeIngredients = new List<IngredientType>();
+    [SerializeField] public GameObject Recipe;
 
     [Header("Ingredients Added")]
     [SerializeField] private List<IngredientType> ingredientsAdded = new List<IngredientType>();
@@ -38,7 +39,7 @@ public class PotionUpdate : MonoBehaviour
 
     private void CheckRecipe()
     {
-        if (ingredientsAdded.Count > recipeIngredients.Count)
+        if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredients.Count)
         {
             Debug.Log("Recette incorrecte : trop d'ingrédients !");
             return;
@@ -46,14 +47,14 @@ public class PotionUpdate : MonoBehaviour
 
         for (int i = 0; i < ingredientsAdded.Count; i++)
         {
-            if (ingredientsAdded[i] != recipeIngredients[i])
+            if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredients[i])
             {
                 Debug.Log("Recette incorrecte !");
                 return;
             }
         }
 
-        if (ingredientsAdded.Count == recipeIngredients.Count)
+        if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredients.Count)
         {
             Debug.Log("Recette réussie !");
             OnRecipeCompleted?.Invoke(recipeID);
