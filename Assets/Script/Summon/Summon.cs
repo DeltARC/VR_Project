@@ -8,6 +8,8 @@ public class Summon : MonoBehaviour
     [SerializeField] public GameObject[] ZoneFlame;
     [SerializeField] public GameObject Chaudron;
     [SerializeField] public GameObject[] Demon;
+
+    public Vector3[] scaleDemon;
     public int SelectDemon;
 
     public GameObject Summoning;
@@ -55,10 +57,10 @@ public class Summon : MonoBehaviour
 
         if(Verif == true)
         {
-            if(!AlreadySummon && Chaudron.GetComponent<PotionUpdate>().PotionSuccess)
+            if (!AlreadySummon && Chaudron.GetComponent<PotionUpdate>().PotionSuccess)
             {
                 Instantiate(Summoning, gameObject.transform);
-                Instantiate(Demon[0], gameObject.transform).transform.localScale = new Vector3(50f, 50f, 50f);
+                Instantiate(Demon[SelectDemon], gameObject.transform).transform.localScale = scaleDemon[SelectDemon];
                 Debug.Log("Summoning");
                 AlreadySummon = true;
             }
