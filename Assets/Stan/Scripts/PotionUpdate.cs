@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Collections;
 
 public class PotionUpdate : MonoBehaviour
 {
@@ -67,6 +68,18 @@ public class PotionUpdate : MonoBehaviour
         CheckRecipe();
     }
 
+    private IEnumerator ResetPotion()
+    {
+        yield return new WaitForSeconds(2f);
+
+        ingredientsAdded.Clear();
+
+        if (potionVisuals != null)
+            potionVisuals.ResetPotionVisuals();
+
+        Debug.Log("Potion réinitialisée.");
+    }
+
     private void CompleteRecipe(string completedRecipeID, int demonIndex, bool isTutorial = false)
     {
         Debug.Log("Recette réussie ! ID envoyé : " + completedRecipeID);
@@ -80,8 +93,10 @@ public class PotionUpdate : MonoBehaviour
         if (isTutorial)
             FinishTuto = true;
 
-        potionVisuals.water.position = transform.parent.position;
-        ingredientsAdded = new List<IngredientType>();
+        if (potionVisuals != null && potionVisuals.water != null)
+            potionVisuals.water.position = transform.parent.position;
+
+        StartCoroutine(ResetPotion());
     }
 
     private void CheckRecipe()
@@ -93,6 +108,7 @@ public class PotionUpdate : MonoBehaviour
             if (ingredientsAdded.Count > recipe.recipeIngredientsTuto.Count)
             {
                 Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                StartCoroutine(ResetPotion());
                 return;
             }
 
@@ -101,6 +117,7 @@ public class PotionUpdate : MonoBehaviour
                 if (ingredientsAdded[i] != recipe.recipeIngredientsTuto[i])
                 {
                     Debug.Log("Recette incorrecte !");
+                    StartCoroutine(ResetPotion());
                     return;
                 }
             }
@@ -123,6 +140,7 @@ public class PotionUpdate : MonoBehaviour
                 if (ingredientsAdded.Count > recipe.recipeIngredientssolidrock.Count)
                 {
                     Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                    StartCoroutine(ResetPotion());
                     return;
                 }
 
@@ -131,6 +149,7 @@ public class PotionUpdate : MonoBehaviour
                     if (ingredientsAdded[i] != recipe.recipeIngredientssolidrock[i])
                     {
                         Debug.Log("Recette incorrecte ! SolidRock");
+                        StartCoroutine(ResetPotion());
                         return;
                     }
                 }
@@ -145,6 +164,7 @@ public class PotionUpdate : MonoBehaviour
                 if (ingredientsAdded.Count > recipe.recipeIngredientsisaac.Count)
                 {
                     Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                    StartCoroutine(ResetPotion());
                     return;
                 }
 
@@ -153,6 +173,7 @@ public class PotionUpdate : MonoBehaviour
                     if (ingredientsAdded[i] != recipe.recipeIngredientsisaac[i])
                     {
                         Debug.Log("Recette incorrecte ! Isaac");
+                        StartCoroutine(ResetPotion());
                         return;
                     }
                 }
@@ -167,6 +188,7 @@ public class PotionUpdate : MonoBehaviour
                 if (ingredientsAdded.Count > recipe.recipeIngredientsGamajo.Count)
                 {
                     Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                    StartCoroutine(ResetPotion());
                     return;
                 }
 
@@ -175,6 +197,7 @@ public class PotionUpdate : MonoBehaviour
                     if (ingredientsAdded[i] != recipe.recipeIngredientsGamajo[i])
                     {
                         Debug.Log("Recette incorrecte ! Gamajo");
+                        StartCoroutine(ResetPotion());
                         return;
                     }
                 }
@@ -183,6 +206,11 @@ public class PotionUpdate : MonoBehaviour
                     CompleteRecipe(GamajoID, 3);
                 else
                     Debug.Log("Recette en cours...");
+            }
+            else
+            {
+                Debug.Log("Recette incorrecte : mauvais premier ingrédient !");
+                StartCoroutine(ResetPotion());
             }
         }
     }
