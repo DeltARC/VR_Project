@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 4113469263213481229}
   - component: {fileID: -5637205842188084079}
   m_Layer: 0
-  m_Name: RecetteTuot
+  m_Name: RecetteTuto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -72,6 +72,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: d881095b625f99544867b46aa15c43e5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d0aa93dc477e46359c21d60a58e48736_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 0c13c34e0752b7b479af9dad9d6550bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -118,7 +122,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RevealProgress: 0
+    - _RevealProgress: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
