@@ -154,6 +154,7 @@ MonoBehaviour:
   Summon: {fileID: 0}
   PotionSuccess: 0
   FinishTuto: 0
+  audioSource: {fileID: 5148640574708129718}
 --- !u!82 &5148640574708129718
 AudioSource:
   m_ObjectHideFlags: 0
