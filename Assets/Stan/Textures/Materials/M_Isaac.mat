@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_RecipePage
-  m_Shader: {fileID: -6465566751694194690, guid: b0a8643613040b0488a69ec7690c6685, type: 3}
+  m_Name: M_Isaac
+  m_Shader: {fileID: -6465566751694194690, guid: 8ad190583ffbd05438d93d1ac6a0e472, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -68,8 +68,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2587e76f533844d581a617fd812700d6_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: dd555db9df4192741b4eab3c7bdfe39c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_3c17fb70790e4ab0a9d987f2b4ae1503_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: d881095b625f99544867b46aa15c43e5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_61e81265a92045e2a905a7d1582e0f0a_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 28031348c14630248b36150b9da60ea8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_d0aa93dc477e46359c21d60a58e48736_Texture_1_Texture2D:
@@ -122,7 +130,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RevealProgress: 1
+    - _RevealProgress: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -136,7 +144,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FireColor: {r: 1, g: 0.35477325, b: 0, a: 1}
+    - _FireColor: {r: 0.09133911, g: 0, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
