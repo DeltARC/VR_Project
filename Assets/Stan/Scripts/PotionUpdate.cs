@@ -82,6 +82,7 @@ public class PotionUpdate : MonoBehaviour
                 OnRecipeCompleted?.Invoke(recipeID);
                 PotionSuccess = true;
                 Summon.GetComponent<Summon>().CheckSumonning();
+                Summon.GetComponent<Summon>().SelectDemon = 0;
                 FinishTuto = true;
                 potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
                 ingredientsAdded = new List<IngredientType>();
@@ -118,6 +119,7 @@ public class PotionUpdate : MonoBehaviour
                     OnRecipeCompleted?.Invoke(recipeID);
                     PotionSuccess = true;
                     Summon.GetComponent<Summon>().CheckSumonning();
+                    Summon.GetComponent<Summon>().SelectDemon = 1;
                     potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
                     ingredientsAdded = new List<IngredientType>();
                 }
@@ -149,6 +151,7 @@ public class PotionUpdate : MonoBehaviour
                     OnRecipeCompleted?.Invoke(recipeID);
                     PotionSuccess = true;
                     Summon.GetComponent<Summon>().CheckSumonning();
+                    Summon.GetComponent<Summon>().SelectDemon = 2;
                     potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
                     ingredientsAdded = new List<IngredientType>();
                 }
@@ -180,6 +183,7 @@ public class PotionUpdate : MonoBehaviour
                     OnRecipeCompleted?.Invoke(recipeID);
                     PotionSuccess = true;
                     Summon.GetComponent<Summon>().CheckSumonning();
+                    Summon.GetComponent<Summon>().SelectDemon = 3;
                     potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
                     ingredientsAdded = new List<IngredientType>();
                 }
