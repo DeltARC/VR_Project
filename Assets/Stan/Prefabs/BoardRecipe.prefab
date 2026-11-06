@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70c06a3e05c7d047ab6ff664f3cdfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipePageVisual
-  recipeID: potion_02
+  recipeID: potion_03
   pageRenderer: {fileID: 573412410379851027}
   animationDuration: 2.5
   maxParticleRadius: 7.07
@@ -19899,7 +19899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70c06a3e05c7d047ab6ff664f3cdfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipePageVisual
-  recipeID: potion_03
+  recipeID: potion_02
   pageRenderer: {fileID: 612462387252741979}
   animationDuration: 2.5
   maxParticleRadius: 7.07
