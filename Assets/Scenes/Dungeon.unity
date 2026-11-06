@@ -7935,6 +7935,18 @@ PrefabInstance:
       propertyPath: Summon
       value: 
       objectReference: {fileID: 295228826}
+    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+      propertyPath: recipeIngredients.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+      propertyPath: 'recipeIngredients.Array.data[2]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+      propertyPath: 'recipeIngredients.Array.data[3]'
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
