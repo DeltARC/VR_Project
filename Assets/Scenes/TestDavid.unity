@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de9ea82a2d197f4aa368929aac72ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Test
-  Demon: {fileID: 946439709637205118, guid: 8b592e479a90f2b49b48b19356988d38, type: 3}
+  Demon: {fileID: 946439709637205118, guid: 6ed45b7d23e471e4eb8c5a528dfcab98, type: 3}
   Summon: {fileID: 424003978}
 --- !u!4 &424003980
 Transform:

@@ -2018,6 +2018,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1187514633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161726944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3849753247482600903, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
+  m_PrefabInstance: {fileID: 1258454073}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70c06a3e05c7d047ab6ff664f3cdfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecipePageVisual
 --- !u!1 &172492986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +2770,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257261952}
   m_Mesh: {fileID: 5167623421709730513, guid: d5d988b25efffd745a665dc9f7267f17, type: 3}
+--- !u!114 &270177300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9007331660893436448, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
+  m_PrefabInstance: {fileID: 1258454073}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70c06a3e05c7d047ab6ff664f3cdfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecipePageVisual
 --- !u!1 &275737164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 281225245910220683, guid: a370d68d60bacd24a83337dc84e28e4a, type: 3}
@@ -7083,14 +7105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7644a88a92e48f741aae974ec34652f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotionUpdate
-  recipeID: potion_01
   potionVisuals: {fileID: 837568158}
   Recipe: {fileID: 0}
-  NameRecipe:
-  - recipeIngredientsTuto
-  - recipeIngredientssolidrock
-  - recipeIngredientsisaac
-  - recipeIngredientsGamajo
   ingredientsAdded: 
   Summon: {fileID: 295228826}
   PotionSuccess: 0
@@ -11440,6 +11456,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+--- !u!114 &1381957959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1413752791527273089, guid: 01cfd52d400205144b91156dfab2267f, type: 3}
+  m_PrefabInstance: {fileID: 1258454073}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70c06a3e05c7d047ab6ff664f3cdfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecipePageVisual
 --- !u!1 &1392963783
 GameObject:
   m_ObjectHideFlags: 0
@@ -19160,6 +19187,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4427616182983034, guid: bf5d8fd53463f4842a6b6d4131b52f5f, type: 3}
   m_PrefabInstance: {fileID: 715964818}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1698346573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: potionUpdate
+      value: 
+      objectReference: {fileID: 697953542}
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: recipePages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: 'recipePages.Array.data[0]'
+      value: 
+      objectReference: {fileID: 402780726}
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: 'recipePages.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1381957959}
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: 'recipePages.Array.data[2]'
+      value: 
+      objectReference: {fileID: 161726944}
+    - target: {fileID: 459965047369353796, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: 'recipePages.Array.data[3]'
+      value: 
+      objectReference: {fileID: 270177300}
+    - target: {fileID: 6011861434080283629, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_Name
+      value: RecipeBoardManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7567797
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.49000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.803448
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684148743174652308, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2f4fd8e69c872d4185639ad5b1cdcf8, type: 3}
 --- !u!1001 &1727695625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23993,15 +24101,15 @@ PrefabInstance:
     - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
       propertyPath: 'Demon.Array.data[1]'
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 7d4f9315857713a4ba6dd105b6677ba6, type: 3}
+      objectReference: {fileID: 946439709637205118, guid: 6ed45b7d23e471e4eb8c5a528dfcab98, type: 3}
     - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
       propertyPath: 'Demon.Array.data[2]'
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 4a3c345ef97c79340aec9d9f262fc1e5, type: 3}
+      objectReference: {fileID: 946439709637205118, guid: 5fa2b27ccbbd00f4eaa2fdc6d058f98c, type: 3}
     - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
       propertyPath: 'Demon.Array.data[3]'
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 3493e2aa2b056e746a13cc2fe7c411cb, type: 3}
+      objectReference: {fileID: 946439709637205118, guid: 5451e4d1023d4ca44a2beb3c116f2cf7, type: 3}
     - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
       propertyPath: scaleDemon.Array.size
       value: 4
@@ -24576,3 +24684,4 @@ SceneRoots:
   - {fileID: 6429383770509544659}
   - {fileID: 1961363917}
   - {fileID: 1469822597}
+  - {fileID: 1698346573}

@@ -208,7 +208,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7585943505757114488}
@@ -248,7 +248,7 @@ AudioSource:
   m_Resource: {fileID: 8300000, guid: 6c20f062601f7bc4398a1a60fc52a885, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -344,8 +344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Demon2
   Audio: {fileID: 4032415721079840548}
-  Recipe: []
-  RecipeLocation: []
   targetTime: 0
 --- !u!1 &1037606153768983825
 GameObject:

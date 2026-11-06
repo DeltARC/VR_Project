@@ -13,6 +13,8 @@ public class PotionUpdate : MonoBehaviour
     private const string IsaacID = "potion_03";
     private const string GamajoID = "potion_04";
 
+    int demonIndexList;
+
     [Header("Potion")]
     [SerializeField] private PotionVisuals potionVisuals;
 
@@ -86,6 +88,8 @@ public class PotionUpdate : MonoBehaviour
 
         OnRecipeCompleted?.Invoke(completedRecipeID);
 
+        demonIndex = demonIndexList;
+
         PotionSuccess = true;
         Summon.GetComponent<Summon>().CheckSumonning();
         Summon.GetComponent<Summon>().SelectDemon = demonIndex;
@@ -124,7 +128,9 @@ public class PotionUpdate : MonoBehaviour
 
             if (ingredientsAdded.Count == recipe.recipeIngredientsTuto.Count)
             {
+                demonIndexList = 0;
                 CompleteRecipe(TutorialID, 0, true);
+                
             }
             else
             {
@@ -155,7 +161,14 @@ public class PotionUpdate : MonoBehaviour
                 }
 
                 if (ingredientsAdded.Count == recipe.recipeIngredientssolidrock.Count)
+                {
+                    demonIndexList = 1;
                     CompleteRecipe(SolidRockID, 1);
+                    
+                }
+                    
+                    
+                
                 else
                     Debug.Log("Recette en cours...");
             }
@@ -179,7 +192,11 @@ public class PotionUpdate : MonoBehaviour
                 }
 
                 if (ingredientsAdded.Count == recipe.recipeIngredientsisaac.Count)
+                {
+                    demonIndexList = 2;
                     CompleteRecipe(IsaacID, 2);
+                    
+                }
                 else
                     Debug.Log("Recette en cours...");
             }
@@ -203,7 +220,11 @@ public class PotionUpdate : MonoBehaviour
                 }
 
                 if (ingredientsAdded.Count == recipe.recipeIngredientsGamajo.Count)
+                {
+                    demonIndexList = 3;
                     CompleteRecipe(GamajoID, 3);
+
+                }
                 else
                     Debug.Log("Recette en cours...");
             }
