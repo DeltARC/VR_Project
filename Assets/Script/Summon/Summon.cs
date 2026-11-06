@@ -62,7 +62,7 @@ public class Summon : MonoBehaviour
             {
                 Instantiate(Summoning, gameObject.transform);
                 
-                Instantiate(Demon[SelectDemon], new Vector3(positionDemon[SelectDemon].x, positionDemon[SelectDemon].y, positionDemon[SelectDemon].z), gameObject.transform.rotation);                
+                Instantiate(Demon[SelectDemon], Chaudron.GetComponent<Transform>().position, Chaudron.GetComponent<Transform>().rotation);                
                 //Instantiate(Demon[SelectDemon], gameObject.transform);
 
                 Debug.Log("Summoning");

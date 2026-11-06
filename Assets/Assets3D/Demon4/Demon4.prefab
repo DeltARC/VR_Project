@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7321510802923697426}
   - component: {fileID: -3919732649378093111}
+  - component: {fileID: -3414041387725170173}
   m_Layer: 0
   m_Name: Demon4
   m_TagString: Untagged
@@ -130,6 +131,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3414041387725170173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946439709637205118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c4af6c93b66a143a3cb4f4716e4f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Demon4
+  Audio: {fileID: -3919732649378093111}
+  targetTime: 0
 --- !u!1 &3716004579901752622
 GameObject:
   m_ObjectHideFlags: 0

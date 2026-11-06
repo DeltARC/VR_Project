@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: -1180434140638649017}
   - component: {fileID: 4113469263213481229}
   - component: {fileID: -5637205842188084079}
+  - component: {fileID: -6521593543881248992}
   m_Layer: 0
   m_Name: RecetteLeevasche
   m_TagString: Untagged
@@ -380,6 +381,22 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &-6521593543881248992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4888152261003218790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 5265338616175033476, guid: 676495578677d8242a14ef1acd3ee60f, type: 3}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1 &8118984056506266447
 GameObject:
   m_ObjectHideFlags: 0
