@@ -10908,18 +10908,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1074849487099069314, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074849487099069314, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074849487099069314, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074849487099069314, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.366
       objectReference: {fileID: 0}
@@ -10959,25 +10947,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1074849487099069314, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3700305019990711455, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765911247820794585, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 4853600555739758313, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
       propertyPath: m_Name
       value: PotionCauldron
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853600555739758313, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
       propertyPath: Recipe
@@ -10987,18 +10959,6 @@ PrefabInstance:
       propertyPath: Summon
       value: 
       objectReference: {fileID: 295228826}
-    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: recipeIngredients.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: 'recipeIngredients.Array.data[2]'
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
-      propertyPath: 'recipeIngredients.Array.data[3]'
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

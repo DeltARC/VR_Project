@@ -417,6 +417,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7644a88a92e48f741aae974ec34652f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotionUpdate
+--- !u!82 &552848004 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5148640574708129718, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+  m_PrefabInstance: {fileID: 1697583506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &564237980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1174,6 +1179,10 @@ PrefabInstance:
       propertyPath: Summon
       value: 
       objectReference: {fileID: 1977012296}
+    - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 552848004}
     - target: {fileID: 8134161360756677896, guid: 3156d8027e7db6d418a82e8a428c0dfb, type: 3}
       propertyPath: recipeIngredients.Array.size
       value: 4

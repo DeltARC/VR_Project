@@ -24,6 +24,12 @@ public class PotionUpdate : MonoBehaviour
 
     public bool FinishTuto = false;
 
+    [SerializeField] private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         PotionIngredient ingredient = other.GetComponentInParent<PotionIngredient>();
@@ -39,6 +45,7 @@ public class PotionUpdate : MonoBehaviour
         //other.GetComponent<Respawn>().Respawning();
         other.GetComponent<Rigidbody>().isKinematic = false;
         other.GetComponent<Rigidbody>().useGravity = true;
+        audioSource.Play();
 
         Instantiate(ingredient.gameObject, other.GetComponent<Respawn>().SpawnLocation, other.GetComponent<Transform>().rotation);
 
