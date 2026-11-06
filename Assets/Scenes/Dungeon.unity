@@ -23507,6 +23507,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 697953540}
     - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: Demon.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: 'Demon.Array.data[0]'
+      value: 
+      objectReference: {fileID: 946439709637205118, guid: 8b592e479a90f2b49b48b19356988d38, type: 3}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: 'Demon.Array.data[1]'
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 7d4f9315857713a4ba6dd105b6677ba6, type: 3}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: 'Demon.Array.data[2]'
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 4a3c345ef97c79340aec9d9f262fc1e5, type: 3}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: 'Demon.Array.data[3]'
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 3493e2aa2b056e746a13cc2fe7c411cb, type: 3}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
       propertyPath: 'ZoneFlame.Array.data[0]'
       value: 
       objectReference: {fileID: 830920741}
@@ -23526,6 +23550,54 @@ PrefabInstance:
       propertyPath: 'ZoneFlame.Array.data[4]'
       value: 
       objectReference: {fileID: 2058228775}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[0].x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[0].y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[0].z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[1].x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[1].y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[1].z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[2].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[2].z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[3].x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[3].y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
+      propertyPath: scaleDemon.Array.data[3].z
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 608171502937938078, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
       propertyPath: 'CandlePlacement.Array.data[0]'
       value: 
