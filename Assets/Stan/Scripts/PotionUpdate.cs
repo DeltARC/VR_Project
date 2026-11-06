@@ -46,7 +46,9 @@ public class PotionUpdate : MonoBehaviour
 
         if (particles != null)
         {
+            Quaternion particlesRotation = particles.transform.rotation;
             particles.transform.SetParent(null);
+            particles.transform.rotation = particlesRotation;
             Debug.Log("Splash");
             particles.Play();
             Destroy(particles.gameObject, particles.main.duration + particles.main.startLifetime.constantMax);
