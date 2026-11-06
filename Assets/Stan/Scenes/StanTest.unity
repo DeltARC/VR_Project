@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EyeMesh
       objectReference: {fileID: 0}
+    - target: {fileID: 6061537409191947156, guid: ee6ad6d9589ab2546ab3a205872c0638, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6869458946630938926, guid: ee6ad6d9589ab2546ab3a205872c0638, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -801,7 +805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2098290404601026376, guid: f698d55fed7910b46adf37c2601ea7d3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8018253232275561038, guid: f698d55fed7910b46adf37c2601ea7d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -927,7 +931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6034490857376777314, guid: 21390c9b60197e948af87a68fdaa2878, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6034490857376777314, guid: 21390c9b60197e948af87a68fdaa2878, type: 3}
       propertyPath: m_LocalPosition.z
@@ -960,6 +964,10 @@ PrefabInstance:
     - target: {fileID: 6034490857376777314, guid: 21390c9b60197e948af87a68fdaa2878, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967644794669397351, guid: 21390c9b60197e948af87a68fdaa2878, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1022,6 +1030,10 @@ PrefabInstance:
     - target: {fileID: 4190440803964274936, guid: df8439662d982bd488cce329ac7dc34e, type: 3}
       propertyPath: m_Name
       value: toad-warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190440803964274936, guid: df8439662d982bd488cce329ac7dc34e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1676,6 +1688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragonBlood
       objectReference: {fileID: 0}
+    - target: {fileID: 2240914668762679974, guid: 4cbe174750b7ed047994d1836366ab77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1735,7 +1751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3181062615107919789, guid: 7177e89272cd9e64db4194c7907cad14, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1874,6 +1890,9 @@ SceneRoots:
   - {fileID: 158311916}
   - {fileID: 77872454064344047}
   - {fileID: 974269323}
+  - {fileID: 2141519992}
+  - {fileID: 1081602946}
+  - {fileID: 1375076212}
   - {fileID: 2751559810338641180}
   - {fileID: 1234435912913103857}
   - {fileID: 892732166}
@@ -1889,6 +1908,3 @@ SceneRoots:
   - {fileID: 2105449689}
   - {fileID: 51313329}
   - {fileID: 564237980}
-  - {fileID: 2141519992}
-  - {fileID: 1081602946}
-  - {fileID: 1375076212}

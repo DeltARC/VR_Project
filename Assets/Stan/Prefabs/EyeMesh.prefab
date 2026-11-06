@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
   portalPrefab: {fileID: 0}
   portalHeight: 0
   portalDuration: 2

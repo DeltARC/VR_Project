@@ -47,6 +47,7 @@ public class PotionUpdate : MonoBehaviour
         if (particles != null)
         {
             particles.transform.SetParent(null);
+            Debug.Log("Splash");
             particles.Play();
             Destroy(particles.gameObject, particles.main.duration + particles.main.startLifetime.constantMax);
         }

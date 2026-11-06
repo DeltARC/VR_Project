@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
   portalPrefab: {fileID: 5265338616175033476, guid: 676495578677d8242a14ef1acd3ee60f, type: 3}
   portalHeight: 0
   portalDuration: 2
@@ -416,6 +417,18 @@ PrefabInstance:
     - target: {fileID: 4292572454765437206, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
       value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.099999994
       objectReference: {fileID: 0}
     - target: {fileID: 4579621380477214447, guid: d44a3bab275c41f48b24d1e504301c44, type: 3}
       propertyPath: m_LocalPosition.x
