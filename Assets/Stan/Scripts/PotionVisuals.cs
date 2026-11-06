@@ -3,7 +3,7 @@ using UnityEngine;
 public class PotionVisuals : MonoBehaviour
 {
     [Header("Water")]
-    [SerializeField] private Transform water;
+    [SerializeField] public Transform water;
     [SerializeField] private Renderer waterRenderer;
 
     [Header("Feedback")]

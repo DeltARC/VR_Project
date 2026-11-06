@@ -22,7 +22,7 @@ public class PotionUpdate : MonoBehaviour
 
     public bool PotionSuccess = false;
 
-    private bool FinishTuto = false;
+    public bool FinishTuto = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -60,13 +60,15 @@ public class PotionUpdate : MonoBehaviour
                 }
             }
 
-            if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientsTuto.Count)
+            if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientsTuto.Count)    
             {
                 Debug.Log("Recette réussie !");
                 OnRecipeCompleted?.Invoke(recipeID);
                 PotionSuccess = true;
                 Summon.GetComponent<Summon>().CheckSumonning();
                 FinishTuto = true;
+                potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
+                ingredientsAdded = new List<IngredientType>();
             }
             else
             {
@@ -77,7 +79,7 @@ public class PotionUpdate : MonoBehaviour
         {
             int j = 0;
 
-            if (Recipe.GetComponent<Recipe>().recipeIngredientssolidrock[j] == IngredientType.Toad) //SolidRock
+            if (Recipe.GetComponent<Recipe>().recipeIngredientssolidrock[j] == IngredientType.Toad && ingredientsAdded[j] == IngredientType.Toad) //SolidRock
             {
                 if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
                 {
@@ -100,13 +102,15 @@ public class PotionUpdate : MonoBehaviour
                     OnRecipeCompleted?.Invoke(recipeID);
                     PotionSuccess = true;
                     Summon.GetComponent<Summon>().CheckSumonning();
+                    potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
+                    ingredientsAdded = new List<IngredientType>();
                 }
                 else
                 {
                     Debug.Log("Recette en cours...");
                 }
             }
-            else if(Recipe.GetComponent<Recipe>().recipeIngredientsisaac[j] == IngredientType.DragonBlood) // Issac
+            else if(Recipe.GetComponent<Recipe>().recipeIngredientsisaac[j] == IngredientType.DragonBlood && ingredientsAdded[j] == IngredientType.DragonBlood) // Issac
             {
                 if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsisaac.Count)
                 {
@@ -129,13 +133,15 @@ public class PotionUpdate : MonoBehaviour
                     OnRecipeCompleted?.Invoke(recipeID);
                     PotionSuccess = true;
                     Summon.GetComponent<Summon>().CheckSumonning();
+                    potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
+                    ingredientsAdded = new List<IngredientType>();
                 }
                 else
                 {
                     Debug.Log("Recette en cours...");
                 }
             }
-            else if(Recipe.GetComponent<Recipe>().recipeIngredientsGamajo[j] == IngredientType.Eye) //Gamajo
+            else if(Recipe.GetComponent<Recipe>().recipeIngredientsGamajo[j] == IngredientType.Eye && ingredientsAdded[j] == IngredientType.Eye) //Gamajo
             {
                 if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsGamajo.Count)
                 {
@@ -158,6 +164,8 @@ public class PotionUpdate : MonoBehaviour
                     OnRecipeCompleted?.Invoke(recipeID);
                     PotionSuccess = true;
                     Summon.GetComponent<Summon>().CheckSumonning();
+                    potionVisuals.water.position = gameObject.GetComponentInParent<Transform>().position;
+                    ingredientsAdded = new List<IngredientType>();
                 }
                 else
                 {
