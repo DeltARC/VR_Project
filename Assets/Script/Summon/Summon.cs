@@ -19,7 +19,7 @@ public class Summon : MonoBehaviour
     public bool[] fireV;
 
     bool Verif = false;
-    bool AlreadySummon = false;
+    public bool AlreadySummon = false;
 
     public void CheckSumonning()
     {

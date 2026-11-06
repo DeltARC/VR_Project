@@ -93,6 +93,7 @@ public class PotionUpdate : MonoBehaviour
         PotionSuccess = true;
         Summon.GetComponent<Summon>().CheckSumonning();
         Summon.GetComponent<Summon>().SelectDemon = demonIndex;
+        Summon.GetComponent<Summon>().AlreadySummon = false;
 
         if (isTutorial)
             FinishTuto = true;
