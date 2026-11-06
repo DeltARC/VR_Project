@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    private Vector3 SpawnLocation;
+    public Vector3 SpawnLocation;
 
     [Header("Portal")]
     [SerializeField] private GameObject portalPrefab;

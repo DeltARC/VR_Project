@@ -36,7 +36,13 @@ public class PotionUpdate : MonoBehaviour
         if (potionVisuals != null)
             potionVisuals.UpdatePotionVisuals(ingredient.GetIngredientMaterial());
 
-        other.GetComponent<Respawn>().Respawning();
+        //other.GetComponent<Respawn>().Respawning();
+        other.GetComponent<Rigidbody>().isKinematic = false;
+        other.GetComponent<Rigidbody>().useGravity = true;
+
+        Instantiate(ingredient.gameObject, other.GetComponent<Respawn>().SpawnLocation, other.GetComponent<Transform>().rotation);
+        
+        Destroy(ingredient.gameObject);
 
         CheckRecipe();
     }
