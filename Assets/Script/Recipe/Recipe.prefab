@@ -127,7 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa197ee03f29abe4abd064928f775694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Recipe
-  recipeIngredients: 00000000000000000300000004000000
+  recipeIngredientsTuto: 00000000000000000300000004000000
+  recipeIngredientssolidrock: 0200000002000000000000000000000001000000
+  recipeIngredientsisaac: 0500000001000000040000000300000000000000
+  recipeIngredientsGamajo: 00000000000000000200000004000000010000000300000005000000
 --- !u!54 &4113469263213481229
 Rigidbody:
   m_ObjectHideFlags: 0

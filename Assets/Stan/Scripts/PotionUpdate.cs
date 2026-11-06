@@ -20,6 +20,8 @@ public class PotionUpdate : MonoBehaviour
 
     public bool PotionSuccess = false;
 
+    private bool FinishTuto = false;
+
     private void OnTriggerEnter(Collider other)
     {
         PotionIngredient ingredient = other.GetComponentInParent<PotionIngredient>();
@@ -39,31 +41,64 @@ public class PotionUpdate : MonoBehaviour
 
     private void CheckRecipe()
     {
-        if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredients.Count)
+        if(!FinishTuto)
         {
-            Debug.Log("Recette incorrecte : trop d'ingrédients !");
-            return;
-        }
-
-        for (int i = 0; i < ingredientsAdded.Count; i++)
-        {
-            if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredients[i])
+            if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsTuto.Count)
             {
-                Debug.Log("Recette incorrecte !");
+                Debug.Log("Recette incorrecte : trop d'ingrédients !");
                 return;
             }
-        }
 
-        if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredients.Count)
-        {
-            Debug.Log("Recette réussie !");
-            OnRecipeCompleted?.Invoke(recipeID);
-            PotionSuccess = true;
-            Summon.GetComponent<Summon>().CheckSumonning();
+            for (int i = 0; i < ingredientsAdded.Count; i++)
+            {
+                if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredientsTuto[i])
+                {
+                    Debug.Log("Recette incorrecte !");
+                    return;
+                }
+            }
+
+            if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientsTuto.Count)
+            {
+                Debug.Log("Recette réussie !");
+                OnRecipeCompleted?.Invoke(recipeID);
+                PotionSuccess = true;
+                Summon.GetComponent<Summon>().CheckSumonning();
+            }
+            else
+            {
+                Debug.Log("Recette en cours...");
+            }
         }
         else
         {
-            Debug.Log("Recette en cours...");
+            if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
+            {
+                Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                return;
+            }
+
+            for (int i = 0; i < ingredientsAdded.Count; i++)
+            {
+                if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredientssolidrock[i])
+                {
+                    Debug.Log("Recette incorrecte !");
+                    return;
+                }
+            }
+
+            if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
+            {
+                Debug.Log("Recette réussie !");
+                OnRecipeCompleted?.Invoke(recipeID);
+                PotionSuccess = true;
+                Summon.GetComponent<Summon>().CheckSumonning();
+            }
+            else
+            {
+                Debug.Log("Recette en cours...");
+            }
         }
+        
     }
 }
