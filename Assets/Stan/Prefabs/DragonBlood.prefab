@@ -299,6 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  portalPrefab: {fileID: 5265338616175033476, guid: 676495578677d8242a14ef1acd3ee60f, type: 3}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1 &3396571847046617506
 GameObject:
   m_ObjectHideFlags: 0
