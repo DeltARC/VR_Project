@@ -28,4 +28,9 @@ public class MainMenu : MonoBehaviour
         audioSource.Play();
     }
 
+    public void Highlight()
+    {
+
+    }
+
 }
