@@ -36,7 +36,7 @@ public class PotionUpdate : MonoBehaviour
         if (potionVisuals != null)
             potionVisuals.UpdatePotionVisuals(ingredient.GetIngredientMaterial());
 
-        Destroy(ingredient.gameObject);
+        other.GetComponent<Respawn>().Respawning();
 
         CheckRecipe();
     }
