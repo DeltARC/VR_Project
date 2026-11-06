@@ -41,7 +41,16 @@ public class PotionUpdate : MonoBehaviour
         other.GetComponent<Rigidbody>().useGravity = true;
 
         Instantiate(ingredient.gameObject, other.GetComponent<Respawn>().SpawnLocation, other.GetComponent<Transform>().rotation);
-        
+
+        ParticleSystem particles = ingredient.GetComponentInChildren<ParticleSystem>();
+
+        if (particles != null)
+        {
+            particles.transform.SetParent(null);
+            particles.Play();
+            Destroy(particles.gameObject, particles.main.duration + particles.main.startLifetime.constantMax);
+        }
+
         Destroy(ingredient.gameObject);
 
         CheckRecipe();

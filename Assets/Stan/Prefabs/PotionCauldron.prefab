@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 3700305019990711455}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0}
-  m_LocalScale: {x: 0.239, y: 1, z: 0.239}
+  m_LocalPosition: {x: 0, y: 1.15, z: 0}
+  m_LocalScale: {x: 0.23, y: 1, z: 0.23}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1074849487099069314}
@@ -129,7 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PotionVisuals
   water: {fileID: 3739495207514931232}
   waterRenderer: {fileID: 4914050440456047472}
-  heightIncrease: 0.05
 --- !u!114 &8134161360756677896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,10 +143,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PotionUpdate
   recipeID: potion_01
   potionVisuals: {fileID: 695974180646241844}
-  recipeIngredients: 000000000000000001000000030000000300000003000000030000000200000002000000040000000500000005000000
+  Recipe: {fileID: 0}
+  NameRecipe:
+  - recipeIngredientsTuto
+  - recipeIngredientssolidrock
+  - recipeIngredientsisaac
+  - recipeIngredientsGamajo
   ingredientsAdded: 
   Summon: {fileID: 1660420568512994113, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
   PotionSuccess: 0
+  FinishTuto: 0
 --- !u!1 &4853600555739758313
 GameObject:
   m_ObjectHideFlags: 0
