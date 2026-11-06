@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 110737627356842143}
   - component: {fileID: 8774263291648156420}
   - component: {fileID: 3328309751623209903}
+  - component: {fileID: 8372299936566747442}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -286,3 +287,15 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &8372299936566747442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782351502977635464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Respawn
