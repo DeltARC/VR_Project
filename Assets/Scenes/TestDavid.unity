@@ -840,6 +840,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 0}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1 &1046606200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7734625055479116513, guid: c8839ce71488ab54bab3716b9075448f, type: 3}
@@ -1052,6 +1056,87 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1001 &1390403373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 49.67
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 49.67
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 49.67
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7927217
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.6272798
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3679145786824393594, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 889884ebc0d496e439b3d538a7a91297, type: 2}
+    - target: {fileID: -1364622486029531131, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 889884ebc0d496e439b3d538a7a91297, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
+      propertyPath: m_Name
+      value: pose_Complet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a173241c3c73ba47b37f01e82249bda, type: 3}
 --- !u!1 &1426056961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 0}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1 &1443609696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1660420568512994113, guid: 69a7b361c275a6a4fbc80a8864aa3eec, type: 3}
@@ -1919,6 +2008,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 0}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1 &1710599753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2623,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 0}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1001 &573186847820991573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2765,6 +2862,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 0}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1001 &6556356543712063739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2850,6 +2951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004b6b8f94190b547a697bb4858a9b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
+  SpawnLocation: {x: 0, y: 0, z: 0}
+  portalPrefab: {fileID: 0}
+  portalHeight: 0
+  portalDuration: 2
 --- !u!1001 &7634088233405885184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2929,3 +3034,4 @@ SceneRoots:
   - {fileID: 3691061172463847708}
   - {fileID: 7634088233405885184}
   - {fileID: 351368511}
+  - {fileID: 1390403373}
