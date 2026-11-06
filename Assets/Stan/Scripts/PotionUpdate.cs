@@ -11,8 +11,10 @@ public class PotionUpdate : MonoBehaviour
     [SerializeField] private PotionVisuals potionVisuals;
 
     [Header("Recipe")]
-    [SerializeField] private List<IngredientType> recipeIngredients = new List<IngredientType>();
+
     [SerializeField] public GameObject Recipe;
+
+    [SerializeField] private string[] NameRecipe = { "recipeIngredientsTuto", "recipeIngredientssolidrock", "recipeIngredientsisaac", "recipeIngredientsGamajo" };
 
     [Header("Ingredients Added")]
     [SerializeField] private List<IngredientType> ingredientsAdded = new List<IngredientType>();
@@ -43,7 +45,7 @@ public class PotionUpdate : MonoBehaviour
     {
         if(!FinishTuto)
         {
-            if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsTuto.Count)
+            if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsTuto.Count)// Tuto
             {
                 Debug.Log("Recette incorrecte : trop d'ingrédients !");
                 return;
@@ -64,6 +66,7 @@ public class PotionUpdate : MonoBehaviour
                 OnRecipeCompleted?.Invoke(recipeID);
                 PotionSuccess = true;
                 Summon.GetComponent<Summon>().CheckSumonning();
+                FinishTuto = true;
             }
             else
             {
@@ -72,31 +75,94 @@ public class PotionUpdate : MonoBehaviour
         }
         else
         {
-            if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
-            {
-                Debug.Log("Recette incorrecte : trop d'ingrédients !");
-                return;
-            }
+            int j = 0;
 
-            for (int i = 0; i < ingredientsAdded.Count; i++)
+            if (Recipe.GetComponent<Recipe>().recipeIngredientssolidrock[j] == IngredientType.Toad) //SolidRock
             {
-                if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredientssolidrock[i])
+                if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
                 {
-                    Debug.Log("Recette incorrecte !");
+                    Debug.Log("Recette incorrecte : trop d'ingrédients !");
                     return;
                 }
-            }
 
-            if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
-            {
-                Debug.Log("Recette réussie !");
-                OnRecipeCompleted?.Invoke(recipeID);
-                PotionSuccess = true;
-                Summon.GetComponent<Summon>().CheckSumonning();
+                for (int i = 0; i < ingredientsAdded.Count; i++)
+                {
+                    if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredientssolidrock[i])
+                    {
+                        Debug.Log("Recette incorrecte ! SolidRock");
+                        return;
+                    }
+                }
+
+                if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientssolidrock.Count)
+                {
+                    Debug.Log("Recette réussie ! SolidRock");
+                    OnRecipeCompleted?.Invoke(recipeID);
+                    PotionSuccess = true;
+                    Summon.GetComponent<Summon>().CheckSumonning();
+                }
+                else
+                {
+                    Debug.Log("Recette en cours...");
+                }
             }
-            else
+            else if(Recipe.GetComponent<Recipe>().recipeIngredientsisaac[j] == IngredientType.DragonBlood) // Issac
             {
-                Debug.Log("Recette en cours...");
+                if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsisaac.Count)
+                {
+                    Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                    return;
+                }
+
+                for (int i = 0; i < ingredientsAdded.Count; i++)
+                {
+                    if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredientsisaac[i])
+                    {
+                        Debug.Log("Recette incorrecte ! Issac");
+                        return;
+                    }
+                }
+
+                if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientsisaac.Count)
+                {
+                    Debug.Log("Recette réussie ! Issac");
+                    OnRecipeCompleted?.Invoke(recipeID);
+                    PotionSuccess = true;
+                    Summon.GetComponent<Summon>().CheckSumonning();
+                }
+                else
+                {
+                    Debug.Log("Recette en cours...");
+                }
+            }
+            else if(Recipe.GetComponent<Recipe>().recipeIngredientsGamajo[j] == IngredientType.Eye) //Gamajo
+            {
+                if (ingredientsAdded.Count > Recipe.GetComponent<Recipe>().recipeIngredientsGamajo.Count)
+                {
+                    Debug.Log("Recette incorrecte : trop d'ingrédients !");
+                    return;
+                }
+
+                for (int i = 0; i < ingredientsAdded.Count; i++)
+                {
+                    if (ingredientsAdded[i] != Recipe.GetComponent<Recipe>().recipeIngredientsGamajo[i])
+                    {
+                        Debug.Log("Recette incorrecte ! Gamajo");
+                        return;
+                    }
+                }
+
+                if (ingredientsAdded.Count == Recipe.GetComponent<Recipe>().recipeIngredientsGamajo.Count)
+                {
+                    Debug.Log("Recette réussie ! Gamajo");
+                    OnRecipeCompleted?.Invoke(recipeID);
+                    PotionSuccess = true;
+                    Summon.GetComponent<Summon>().CheckSumonning();
+                }
+                else
+                {
+                    Debug.Log("Recette en cours...");
+                }
             }
         }
         
