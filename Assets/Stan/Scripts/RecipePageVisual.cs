@@ -37,23 +37,39 @@ public class RecipePageVisual : MonoBehaviour
 
     public void Reveal()
     {
+        Debug.Log("[RecipePageVisual] Reveal() appelé pour : " + recipeID);
+
         if (isRevealed || appearanceCoroutine != null)
+        {
+            Debug.LogWarning("[RecipePageVisual] Animation déjà lancée ou page déjà révélée.");
             return;
+        }
 
         isRevealed = true;
         pageRenderer.enabled = true;
+
+        Debug.Log("[RecipePageVisual] Renderer activé.");
 
         if (appearanceParticles != null)
         {
             appearanceParticles.Clear();
             appearanceParticles.Play();
+            Debug.Log("[RecipePageVisual] Particules lancées.");
+        }
+        else
+        {
+            Debug.LogWarning("[RecipePageVisual] Aucun Particle System assigné.");
         }
 
         appearanceCoroutine = StartCoroutine(AnimateAppearance());
+
+        Debug.Log("[RecipePageVisual] Coroutine d'animation démarrée.");
     }
 
     private IEnumerator AnimateAppearance()
     {
+        Debug.Log("[RecipePageVisual] Animation en cours.");
+
         float elapsedTime = 0f;
 
         while (elapsedTime < animationDuration)
